@@ -95,17 +95,34 @@ input, textarea {
 	width: 260px;
 	text-align: center;
 	margin: auto;
+	margin-bottom: 25px;
+	overflow: hidden;
 }
 #flip_card {
 	background: #b0f123 url(img/flip.png) no-repeat 20px center;
-	margin-bottom: 15px;
 	margin-right: 20px;
 }
 #new_card {
 	background: #f6ffb1 url(img/new.png) no-repeat 20px center;
-	margin-bottom: 15px;
 }
 	#flip_card:hover, #new_card:hover {
 		background-color: #d1f839;
 		cursor: pointer;
+	}
+
+#settings {
+	margin: auto;
+	text-align: center;
+}
+	#settings label {
+		display: block;
+		margin-bottom: 8px;
+	}
+.set_option span {
+	padding: 5px 10px;
+	color: #BBBBBB;
+}
+	span.set {
+		background: #999999;
+		color: #EFEFEF;
 	}

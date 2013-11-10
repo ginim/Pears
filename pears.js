@@ -37,8 +37,14 @@ function setCardHtml(card) {
 	$('#card_pinyin').html(card.pinyin);
 	$('#card_english').html(card.english);
 
-	$('#card_side1').show();
-	$('#card_side2').hide();
+	if($('#set_chinese').hasClass('set')) {
+		$('#card_side1').show();
+		$('#card_side2').hide();
+	}
+	if($('#set_english').hasClass('set')) {
+		$('#card_side1').hide();
+		$('#card_side2').show();
+	}
 }
 
 $('#flip_card').on('click', function() {
@@ -50,6 +56,19 @@ $('#new_card').on('click', function() {
 	var newCard = getNewCard();
 	setCardHtml(newCard);
 });
+
+
+settingsMap = {'#set_chinese':'#set_english','#set_english':'#set_chinese'}
+
+$('#set_chinese, #set_english').on('click', function() {
+	setId = "#"+$(this).attr('id');
+	$(this).toggleClass('set');
+	$(settingsMap[setId]).toggleClass('set');
+
+	$('#card_side1').toggle();
+	$('#card_side2').toggle();	
+});
+
 
 $(document).ready( function() {
 	var currentCard = getNewCard();
