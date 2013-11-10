@@ -89,6 +89,7 @@ input, textarea {
 	text-align: center;
 	font-size: 1.1em;
 	float: left;
+	border-radius: 5px;
 }
 #card_buttons {
 	width: 260px;
