@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Kameron);
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Kameron', serif;
+	font-weight: normal;
+	text-decoration: none;
+	border: 0;
+}
+body {
+	color: #333333;
+	background: #FAFAFA;
+}
+header {
+	padding: 30px;
+	border-bottom: solid 1px #DEDEDE;
+	clear: both;
+}
+div[role=main] {
+	padding: 30px;
+	background: #FFFFFF;
+	border-top: solid 2px #EFEFEF;
+	border-bottom: solid 1px #E6E6E6;
+	overflow: hidden;
+}
+footer {
+	clear: both;
+	padding: 30px;
+	color: #888888;
+	border-top: solid 2px #F6F6F6;
+	text-align: right;
+}
+h1 {
+	background-image: url(img/pears.png);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	padding-left: 35px;
+}
+h3 {
+	margin-top: 30px;
+}
+	h3:first-child {
+		margin-top: 0px;
+	}
+input, textarea {
+	margin: 2px 0px;
+	border: solid 2px #CCCCCC;
+	padding: 2px 4px;
+	font-size: large;
+	width: 300px;
+}
+	input:hover, textarea:hover {
+		border: solid 2px #b3e4c2;
+	}
+
+#card {
+	width: 400px;
+	height: 200px;
+	margin: 0px auto 25px auto;
+	border-radius: 10px;
+	padding: 10px 15px;
+	background: #EFEFEF;
+	border-bottom: solid 5px #DEDEDE;
+	text-align: center;
+}
+#card_side1 {
+	background: url(img/cn.png) no-repeat top right;
+}
+#card_side2 {
+	background: url(img/us.png) no-repeat top right;
+}
+#card_chinese {
+	height: 50px;
+	padding: 30px 0px 25px 0px;
+	font-size: 3em;
+}
+#card_pinyin {
+	font-size: 2em;
+}
+#card_english {
+	height: 50px;
+	padding: 50px 0px 25px 0px;
+	font-size: 2em;
+}
+.card_button {
+	width: 80px;
+	padding: 10px 10px 10px 30px;
+	text-align: center;
+	font-size: 1.1em;
+	float: left;
+}
+#card_buttons {
+	width: 260px;
+	text-align: center;
+	margin: auto;
+}
+#flip_card {
+	background: #b0f123 url(img/flip.png) no-repeat 20px center;
+	margin-bottom: 15px;
+	margin-right: 20px;
+}
+#new_card {
+	background: #f6ffb1 url(img/new.png) no-repeat 20px center;
+	margin-bottom: 15px;
+}
+	#flip_card:hover, #new_card:hover {
+		background-color: #d1f839;
+		cursor: pointer;
+	}
