@@ -3,7 +3,7 @@ Pears
 
 ### Simple flash cards
 
-Pears is a simple Chinese/English flash card set, created for fun one night with @jonsu.
+Pears is a simple Chinese/English flash card set, created for fun one night with @jonsu.  
 More features coming soon.
   
   
